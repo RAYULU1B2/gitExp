@@ -1,0 +1,15 @@
+//Fizz_Buzz programm in simple way
+import java.util.Scanner;
+class FizzBuzz
+{
+    public static void main(String[] args)
+    {
+        System.out.print("Enter a number : ");
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        if(num%3==0 || num%5==0)
+           System.out.println((num%3==0 && num%5==0)?"Fizz Buzz":(num%3==0)?"Fizz":"Buzz");
+        else
+            System.out.println("Neither fizz nor buzz");
+    }
+}
